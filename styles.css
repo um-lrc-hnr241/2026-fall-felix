@@ -1,10 +1,10 @@
 :root {
-  --text: #20242b;
-  --muted: #4a4c4f;
-  --background: #f6f0e3;
-  --surface: #fffdf8;
-  --accent: #713b12;
-  --border: #c9b99f;
+  --text: #f0f5f7;
+  --muted: #c4d1d7;
+  --background: #101820;
+  --surface: #182630;
+  --accent: #78dce8;
+  --border: #536773;
   --max-width: 60rem;
 }
 
@@ -43,6 +43,8 @@ main,
 .site-title {
   margin: 0;
   font-weight: 700;
+  font-family: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
+  letter-spacing: 0.04em;
 }
 
 .site-title a {
@@ -71,6 +73,7 @@ a:focus-visible {
 h1 {
   max-width: 18ch;
   margin-bottom: 0.75rem;
+  font-family: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
   font-size: clamp(2.25rem, 6vw, 3.5rem);
   line-height: 1.1;
 }
@@ -98,6 +101,7 @@ main section {
 
 main section h2 {
   margin-bottom: 0.5rem;
+  font-family: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
   font-size: 1.75rem;
 }
 
