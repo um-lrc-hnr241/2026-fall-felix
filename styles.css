@@ -1,10 +1,11 @@
 :root {
-  --text: #1f2933;
-  --muted: #52606d;
-  --background: #fdfcf9;
-  --accent: #1d5fa8;
-  --border: #d9d4c7;
-  --max-width: 46rem;
+  --text: #20242b;
+  --muted: #4a4c4f;
+  --background: #f6f0e3;
+  --surface: #fffdf8;
+  --accent: #713b12;
+  --border: #c9b99f;
+  --max-width: 60rem;
 }
 
 *,
@@ -68,8 +69,53 @@ a:focus-visible {
 }
 
 h1 {
-  font-size: 2.25rem;
-  line-height: 1.2;
+  max-width: 18ch;
+  margin-bottom: 0.75rem;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.eyebrow {
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.intro {
+  max-width: 48rem;
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+main section {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+main section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.contribution-card {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-left: 0.35rem solid var(--accent);
+  background: var(--surface);
+}
+
+.contribution-card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.contribution-card p {
+  margin-bottom: 0;
 }
 
 img,
